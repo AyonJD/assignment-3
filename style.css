@@ -72,8 +72,26 @@ body{
     color: #231D4F;
     background: #fff;
 }
+.pricing-card small{
+    top: -2%;
+}
+/* =======================FAQ Section================= */
+.accordion-item button:focus{
+    box-shadow: none;
+}
+.faq-img{
+    max-height: 315px;
+}
 
 /* =================Media Query===================== */
+@media only screen and (max-width: 575px){
+    .card-active{
+        transform: translateY(-2%)
+    }
+    .pricing-card:hover{
+        transform: translateY(-2%);
+    }
+}
 @media only screen and (max-width: 767px){
     .carousel-content p{
         font-size: .8rem !important;
