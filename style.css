@@ -159,6 +159,9 @@ body{
     left: 0;
     right: 0;
 }
+footer{
+    background-color: #34495e;
+}
 
 /* =================Media Query===================== */
 @media only screen and (max-width: 575px){
