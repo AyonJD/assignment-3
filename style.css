@@ -10,6 +10,9 @@ body{
 :root{
     --primary: #009688;
 }
+.text-color{
+    color: #231D4F;
+}
                                                     /* =============Custom CSS=============== */
 
 /* ===================Carousel================ */
@@ -37,7 +40,38 @@ body{
     border: 2px solid var(--primary);
     color: #fff;
 }
-
+/* ===================Package Section=================== */
+.pricing-card{
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+.card-btn{
+    color: #231D4F;
+    border: 2px solid var(--primary);
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+.pricing-card:hover .card-btn{
+    border: 2px solid transparent;
+    background: var(--primary);
+    color: #fff;
+}
+.pricing-card:hover{
+    transform: translateY(-8%);
+}
+.card-active{
+    transform: translateY(-8%);
+    background: var(--primary);
+}
+.card-active .card-btn{
+    color: #fff;
+    border: 2px solid #fff;
+}
+.pricing-card:hover .btn-active{
+    border: 2px solid #fff;
+    color: #231D4F;
+    background: #fff;
+}
 
 /* =================Media Query===================== */
 @media only screen and (max-width: 767px){
