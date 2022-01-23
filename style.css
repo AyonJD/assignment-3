@@ -6,3 +6,52 @@ body{
 .navbar .logo{
     font-family: 'Caveat', cursive !important;
 }
+/* ===============Custom Color============= */
+:root{
+    --primary: #009688;
+}
+                                                    /* =============Custom CSS=============== */
+
+/* ===================Carousel================ */
+.carousel-bg-image-01,
+.carousel-bg-image-02,
+.carousel-bg-image-03
+{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(./images/c-3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.carousel-bg-image-02{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url(./images/c-2.jpg);
+}
+.carousel-bg-image-03{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(./images/c-4.jpg);
+}
+.custom-btn{
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    border: 2px solid transparent;
+}
+.custom-btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: #fff;
+}
+
+
+/* =================Media Query===================== */
+@media only screen and (max-width: 767px){
+    .carousel-content p{
+        font-size: .8rem !important;
+    }
+}
+@media only screen and (min-width: 992px){
+    .carousel{
+        height: calc(100vh - 82px);
+    }
+}
+@media only screen and (max-width: 991px){
+    .carousel{
+        height: 100vh;
+    }
+}
