@@ -165,7 +165,7 @@ footer{
 /* =============================Toast==================== */
 .custom-toast-parent{
     top:45%;
-    min-width: 20%;
+    max-width: max-content;
 }
 .custom-toast{
     height: 2.5rem;
@@ -195,5 +195,8 @@ footer{
 @media only screen and (max-width: 991px){
     .carousel{
         height: 100vh;
+    }
+    .custom-toast-parent{
+        top: 20%;
     }
 }
