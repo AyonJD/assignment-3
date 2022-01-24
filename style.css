@@ -164,8 +164,9 @@ footer{
 }
 /* =============================Toast==================== */
 .custom-toast-parent{
-    top:45%;
+    top: 45%;
     max-width: max-content;
+    border-left: 4px solid #009688;
 }
 .custom-toast{
     height: 2.5rem;
